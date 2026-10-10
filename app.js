@@ -9,7 +9,7 @@ const PUZZLE_LEVELS = [
   {
     id: 1,
     title: "Đôi Dép Bác Hồ - Rèn Luyện Đạo Đức",
-    image: "./docs/CẦN KIỆM LIÊM CHÍNH.jpg",
+    image: new URL("./docs/CẦN KIỆM LIÊM CHÍNH.jpg", import.meta.url).href,
     topic: "Xây dựng Đạo đức Cách mạng theo Tư tưởng HCM",
     mode: "swap",
     modeLabel: "🔄 Đổi vị trí (3x3)",
@@ -31,7 +31,7 @@ const PUZZLE_LEVELS = [
   {
     id: 2,
     title: "Giá Trị Bộ Đội Cụ Hồ",
-    image: "./docs/NÊU GƯƠNG.jpg",
+    image: new URL("./docs/NÊU GƯƠNG.jpg", import.meta.url).href,
     topic: "Phát huy Trách nhiệm Nêu gương Hiện nay",
     mode: "swap",
     modeLabel: "🔄 Đổi vị trí (3x3)",
@@ -53,7 +53,7 @@ const PUZZLE_LEVELS = [
   {
     id: 3,
     title: "Văn Hóa Ứng Xử Trên Mạng",
-    image: "./docs/VĂN HÓA MẠNG.jpg",
+    image: new URL("./docs/VĂN HÓA MẠNG.jpg", import.meta.url).href,
     topic: "Xây dựng Văn hóa Con người Thời đại Số",
     mode: "swap",
     modeLabel: "🔄 Đổi vị trí (3x3)",
@@ -75,7 +75,7 @@ const PUZZLE_LEVELS = [
   {
     id: 4,
     title: "Công Trình Thanh Niên Tình Nguyện",
-    image: "./docs/SỨC TRẺ TÌNH NGUYỆN.jpg",
+    image: new URL("./docs/SỨC TRẺ TÌNH NGUYỆN.jpg", import.meta.url).href,
     topic: "Phát huy Sức trẻ & Nguồn lực Con người",
     mode: "slide",
     modeLabel: "🧩 Trượt ô (3x3)",
@@ -97,7 +97,7 @@ const PUZZLE_LEVELS = [
   {
     id: 5,
     title: "Tư Tưởng Văn Hóa Soi Đường",
-    image: "./docs/SOI ĐƯỜNG.jpg",
+    image: new URL("./docs/SOI ĐƯỜNG.jpg", import.meta.url).href,
     topic: "Văn hóa Soi đường cho Quốc dân đi",
     mode: "slide",
     modeLabel: "🧩 Trượt ô (3x3)",
@@ -120,7 +120,7 @@ const PUZZLE_LEVELS = [
   {
     id: 6,
     title: "Cây Tre Việt Nam - Khát Vọng Tự Cường",
-    image: "./docs/TỰ CƯỜNG.jpg",
+    image: new URL("./docs/TỰ CƯỜNG.jpg", import.meta.url).href,
     topic: "Khơi dậy Ý chí Tự lực Tự cường Dân tộc",
     mode: "slide",
     modeLabel: "🧩 Trượt ô (3x3)",
