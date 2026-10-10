@@ -419,7 +419,7 @@ class PuzzleGame {
 
     // Preview Image Modal
     document.getElementById('btn-zoom-preview').addEventListener('click', () => {
-      document.getElementById('full-preview-img').src = encodeURI(this.currentLevel.image);
+      document.getElementById('full-preview-img').src = this.currentLevel.image;
       document.getElementById('preview-modal-title').textContent = this.currentLevel.title;
       this.openModal('preview');
     });
@@ -525,7 +525,7 @@ class PuzzleGame {
 
       card.innerHTML = `
         <div class="card-img-wrapper">
-          <img src="${encodeURI(level.image)}" alt="${level.title}" />
+          <img src="${level.image}" alt="${level.title}" />
           <span class="card-overlay-badge">${level.topic}</span>
           <span class="card-overlay-mode" style="position:absolute; bottom:0.8rem; right:0.8rem; background:rgba(245,158,11,0.9); color:#000; font-weight:800; font-size:0.75rem; padding:0.25rem 0.6rem; border-radius:12px;">${level.modeLabel}</span>
         </div>
@@ -563,7 +563,7 @@ class PuzzleGame {
 
     document.getElementById('current-puzzle-title').textContent = level.title;
     document.getElementById('current-puzzle-topic').textContent = `${level.topic} • ${level.modeLabel}`;
-    document.getElementById('reference-img').src = encodeURI(level.image);
+    document.getElementById('reference-img').src = level.image;
 
     this.moves = 0;
     this.selectedTileIndex = null;
@@ -644,7 +644,7 @@ class PuzzleGame {
       if (isBlank) {
         tileDiv.classList.add('empty-tile');
       } else {
-        tileDiv.style.backgroundImage = `url("${encodeURI(this.currentLevel.image)}")`;
+        tileDiv.style.backgroundImage = `url("${this.currentLevel.image}")`;
         tileDiv.style.backgroundSize = `${this.gridSize * 100}% ${this.gridSize * 100}%`;
         tileDiv.style.backgroundPosition = `${(origCol / (this.gridSize - 1)) * 100}% ${(origRow / (this.gridSize - 1)) * 100}%`;
 
